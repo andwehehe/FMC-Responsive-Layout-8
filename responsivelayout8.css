@@ -303,8 +303,9 @@ body {
   background-color: #F5F6F8;
   padding-block-start: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .small-c {
@@ -326,14 +327,13 @@ body {
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1.7rem;
-  width: 10rem;
+  width: 40%;
   justify-content: center;
 }
 
 .navs {
-  width: max-content;
   font-size: 1.3rem;
   color: var(--Gray-700);
 }
@@ -384,4 +384,32 @@ body {
   .sub-feature__description {
     line-height: 1.7;
   }
+
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .navbar {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .navs {
+    font-size: 1.5vw;
+
+  }
+
+  .sub-nav__container {
+    width: 10vw;
+    align-items: start;
+  }
+  
+  .socmed__platform {
+    width: 1vw;
+  }
+  
 }
